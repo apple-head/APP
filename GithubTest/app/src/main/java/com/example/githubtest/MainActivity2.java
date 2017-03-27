@@ -1,8 +1,5 @@
 package com.example.githubtest;
 
-/**
- * Created by 哲宇 on 2017/3/27.
- */
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -26,13 +23,13 @@ public class MainActivity2 extends AppCompatActivity {
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem action_next) {
-        int id= action_next.getItemId();
-        if (id == R.id.action_next){
+    public boolean onOptionsItemSelected(MenuItem action_back) {
+        int id= action_back.getItemId();
+        if (id == R.id.action_back){
             Intent i1 = new Intent();
             i1.setClass(MainActivity2.this,MainActivity.class);
             startActivity(i1);
         }
-        return  super.onOptionsItemSelected(action_next);
+        return  super.onOptionsItemSelected(action_back);
     }
 }

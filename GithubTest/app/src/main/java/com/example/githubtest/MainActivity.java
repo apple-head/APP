@@ -27,6 +27,6 @@ public class MainActivity extends AppCompatActivity {
             i1.setClass(MainActivity.this,MainActivity2.class);
             startActivity(i1);
         }
-        return  super.onOptionsItemSelected(action_next);
+        return super.onOptionsItemSelected(action_next);
     }
 }
